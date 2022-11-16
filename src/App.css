@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.App {
+  display: flex;
+}
+main {
+  padding: 10px;
+}
+
+.layout-container {
+  width: 100%;
+}
+
+.left-side-bar {
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(25, 118, 210);
+}
+
+.left-side-bar-collapsed {
+  width: 70px !important;
+}
+
+.left-side-bar-collapsed .left-side-bar-menu-link-text {
+  display: none !important;
+}
+
+.content-container {
+  padding-left: 320px;
+  width: calc(100% - 320px) !important;
+}
+
+.content-container-with-collapsed-sidebvar {
+  padding-left: 100px;
+  width: calc(100% - 100px) !important;
+}
